@@ -9,6 +9,14 @@ namespace ConsoleApplication1.Car
 {
     public class Truck : ICar
     {
+        double _price;
+        public Truck(double Price)
+
+        {
+
+            _price = Price;
+
+        }
         public ISize ISize
         {
             get
@@ -27,12 +35,13 @@ namespace ConsoleApplication1.Car
         {
             get
             {
-                throw new NotImplementedException();
+                return _price + (_price * 1.3); // +30% за использование грузовика
             }
 
             set
             {
-                throw new NotImplementedException();
+                if (value < 0 && value == _price) return;
+                _price = value;
             }
         }
 
