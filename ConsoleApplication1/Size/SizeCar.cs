@@ -7,47 +7,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.Size
 {
-    public class SizeCar : ISize
+    public class SizeCar : Size
     {
-        public double Height
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double Length
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double Width
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
         public double Size()
         {
             return Length * Width * Height;

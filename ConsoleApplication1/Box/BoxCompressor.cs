@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication1.Box
 {
@@ -20,6 +21,18 @@ namespace ConsoleApplication1.Box
             }
 
             return size;
+        }
+
+        public static List<IBox> Pack(List<IBox> boxes)
+        {
+            List<IBox> packed = new List<IBox>(boxes.Count);
+
+            for (int i = 0; i < boxes.Count; ++i)
+                packed.Add(boxes[i]);
+            
+            packed.Sort(new BoxComparer());
+
+            return packed;
         }
     }
 }

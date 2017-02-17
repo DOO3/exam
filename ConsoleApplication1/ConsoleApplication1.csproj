@@ -44,11 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Box\Box.cs" />
-
     <Compile Include="Box\BoxCarton.cs" />
+    <Compile Include="Box\BoxComparer.cs" />
     <Compile Include="Box\BoxMetal.cs" />
-
     <Compile Include="Box\BoxCompressor.cs" />
+
+    <Compile Include="Box\BoxOfBoxes.cs" />
 
     <Compile Include="Car\Car.cs" />
     <Compile Include="Car\SmallCar.cs" />

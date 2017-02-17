@@ -6,18 +6,28 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.Size
 {
-    class Size : ISize
+    public class Size : ISize
     {
+        private double _height;
+        private double _width;
+        private double _lenght;
         public double Height
         {
             get
             {
-                throw new NotImplementedException();
+                return _height;
             }
 
             set
             {
-                throw new NotImplementedException();
+                if (value < 0)
+                {
+                    Console.WriteLine("Error");
+                }
+                else
+                {
+                    _height = value;
+                }
             }
         }
 
@@ -25,12 +35,19 @@ namespace ConsoleApplication1.Size
         {
             get
             {
-                throw new NotImplementedException();
+                return _lenght;
             }
 
             set
             {
-                throw new NotImplementedException();
+                if (value < 0)
+                {
+                    Console.WriteLine("Error");
+                }
+                else
+                {
+                    _lenght = value;
+                }
             }
         }
 
@@ -38,12 +55,19 @@ namespace ConsoleApplication1.Size
         {
             get
             {
-                throw new NotImplementedException();
+                return _width;
             }
 
             set
             {
-                throw new NotImplementedException();
+                if (value < 0)
+                {
+                    Console.WriteLine("Error");
+                }
+                else
+                {
+                    _width = value;
+                }
             }
         }
     }
