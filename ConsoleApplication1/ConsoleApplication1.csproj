@@ -48,12 +48,11 @@
     <Compile Include="Box\BoxComparer.cs" />
     <Compile Include="Box\BoxMetal.cs" />
     <Compile Include="Box\BoxCompressor.cs" />
-
     <Compile Include="Box\BoxOfBoxes.cs" />
-
     <Compile Include="Car\Car.cs" />
     <Compile Include="Car\SmallCar.cs" />
     <Compile Include="Car\Truck.cs" />
+    <Compile Include="Dyadchenko\Dyadchenko.cs" />
     <Compile Include="IBox.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="ISize.cs" />
